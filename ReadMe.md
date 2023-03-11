@@ -2,7 +2,7 @@
 
 #### By _**Michael Sol**_
 
-#### _Allows a user to track vendors and their orders_
+#### _Allows a user to track vendors and their orders._
 
 ## Technologies Used
 
