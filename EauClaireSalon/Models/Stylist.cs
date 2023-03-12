@@ -13,10 +13,10 @@ namespace EauClaireSalon.Models
     public List<Client> ClientList { get; set;}
     private static List<Stylist> _instances = new List<Stylist> { };
 
-    public Stylist(string name, DateOnly HireDate) 
+    public Stylist(string name, DateOnly hireDate) 
     {
       Name = name;
-      Description = description;
+      HireDate = hireDate;
       VendorsOrders = new List<Order>();
       _instances.Add(this);
       Id = _instances.Count;
