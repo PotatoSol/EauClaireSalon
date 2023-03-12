@@ -1,17 +1,18 @@
-# _Vendor Order Tracker_
+# _Eau Claire's Salon_
 
 #### By _**Michael Sol**_
 
-#### _Allows a user to track vendors and their orders._
+#### _A MVC web application and database for a fictional hair salon_
 
 ## Technologies Used
 
 * _C#_
 * _Dotnet 6_
+* _SQL_
 
 ## Description
 
-_Allows a user to create a new vendor, and then associate new orders with them. Vendors have a name and a description, orders have a name, description, price, and date._
+_Allows a fictional hair salon to organize employees and their clients.  Stylists are specialists, so each client belongs to a single stylist. Stylists have a hire date and their speciality.  Clients have a stylist (required), and next appointment date._
 
 ## Setup/Installation Requirements
 
@@ -19,7 +20,7 @@ _Allows a user to create a new vendor, and then associate new orders with them. 
 * _Clone the Repo_
 * _Open the project using VS Code_
 * _Open a new terminal_
-* _In the terminal, navigate to 'VendorOrderTracker.Solution/VendorOrderTracker'_ 
+* _In the terminal, navigate to 'EauClaireSalon.Solution/EauClaireSalon'_ 
 * _Run 'dotnet restore'_
 * _Run 'dotnet build'_
 * _Run 'dotnet start'_
@@ -28,7 +29,7 @@ _Allows a user to create a new vendor, and then associate new orders with them. 
 
 ## Known Bugs
 
-*_Not all properties are displayed.  No ability to remove Orders_
+*_None_
 
 ## License
 
