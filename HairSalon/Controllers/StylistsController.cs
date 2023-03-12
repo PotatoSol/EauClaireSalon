@@ -3,7 +3,7 @@ using HairSalon.Models;
 using System.Collections.Generic;
 
 namespace HairSalon.Controllers{
-    public class HairSalon : Controller
+    public class StylistsController : Controller
     {
 
         
