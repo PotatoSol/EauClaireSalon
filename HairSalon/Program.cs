@@ -16,16 +16,14 @@ namespace VenderOrderTracker{
       builder.Services.AddDbContext<HairSalonContext>(
                         dbContextOptions => dbContextOptions
                           .UseMySql(
-                              builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]
-                              )
+                              builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"])
                           )
                         );
-      )
 
       WebApplication app = builder.Build();
 
       app.UseHttpsRedirection();
-
+      app.UseStaticFiles();
       app.UseRouting();
 
       app.MapControllerRoute(
