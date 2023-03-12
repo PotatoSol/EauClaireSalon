@@ -1,17 +1,19 @@
 using System.Collections.Generic;
 using System;
+using EauClaireSalon.Models;
 
-namespace VendorOrderTracker.Models
+namespace EauClaireSalon.Models
 {
-  public class Vendor
+  public class Stylist
   {
     public string Name { get; set; }
-    public string Description { get; set; }
+    public DateOnly HireDate { get; set; }
+    public string Speciality { get; set; }
     public int Id {get;}
-    public List<Order> VendorsOrders { get; set;}
-    private static List<Vendor> _instances = new List<Vendor> { };
+    public List<Client> ClientList { get; set;}
+    private static List<Stylist> _instances = new List<Stylist> { };
 
-    public Vendor(string name, string description) 
+    public Stylist(string name, DateOnly HireDate) 
     {
       Name = name;
       Description = description;
