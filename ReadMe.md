@@ -12,7 +12,7 @@
 
 ## Description
 
-_Allows a fictional hair salon to organize employees and their clients.  Stylists are specialists, so each client belongs to a single stylist. Stylists have a hire date and their speciality.  Clients have a stylist (required), and next appointment date._
+_Allows a fictional hair salon to organize employees and their clients.  Stylists are specialists, so each client belongs to a single stylist. Stylists have a hire date and their speciality.  Clients have a stylist (required), and next appointment date_
 
 ## Setup/Installation Requirements
 
