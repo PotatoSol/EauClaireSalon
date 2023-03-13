@@ -9,5 +9,6 @@ namespace HairSalon.Models
     public DateTime NextAppointment { get; set; }
     public Stylist PersonalStylist { get; set; }
     public int ClientId {get; set;}
+    public int StylistId {get; set;}
   }
 }
