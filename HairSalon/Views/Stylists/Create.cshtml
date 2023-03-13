@@ -1,12 +1,19 @@
 @{
     Layout = "_Layout";
-    //need more here
 }
-    <h>Add A Stylist Form</h><br><br>
-    <form action="/vendors" method="post">
-        <label for="name">Name of Vendor: </label>
-        <input id="name" name="name" type="text"><br><br>
-        <label for="Description">Description of Vendor: </label>
-        <input id="description" name="description" type="text"><br><br>
-        <button type="submit">Submit</button>
-    </form>
+
+@model HairSalon.Models.Stylist
+
+<h4>Add new Stylist</h4>
+@using (Html.BeginForm()){
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.LabelFor(model => model.HireDate)
+    @Html.TextBoxFor(model => model.HireDate)
+
+    @Html.LabelFor(model => model.Speciality)
+    @Html.TextBoxFor(model => model.Speciality)
+    <input type="submit" value="Add new Stylist" />
+}
+
