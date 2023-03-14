@@ -9,11 +9,6 @@
     <ul>
         @foreach(Stylist aStylist in Model){
             <li>@Html.ActionLink($"{aStylist.Name}", "Details", new { id = aStylist.StylistId })</li>
-            <ol>
-                @foreach(Client aClient in aStylist.ClientList){
-                    <li>@Html.ActionLink($"{aClient.Name}", "Details", new { id = aClient.ClientId })</li>
-                }
-            </ol>
         }
     </ul>
 }

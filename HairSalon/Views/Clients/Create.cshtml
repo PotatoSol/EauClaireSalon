@@ -5,10 +5,17 @@
 @model HairSalon.Models.Client;
 
 <h>Add new Client</h>
+
+<p>You must have one stylist before you can add a client</p>
+<p>Go to @Html.ActionLink("this page", "Create", "Stylist") to add a stylist</p>
 @using (Html.BeginForm()){
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name)
-    <input type = "submit" value="Add new Client" />
+    @Html.LabelFor(model => model.NextAppointment)
+    @Html.TextBoxFor(model => model.NextAppointment)
+    @Html.LabelFor(model => model.PersonalStylist)
+    @Html.DropDownList("StylistId")
+    <input type = "submit" value="Add new client" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all Clients", "Index")</p>
 
