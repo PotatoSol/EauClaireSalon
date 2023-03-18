@@ -18,6 +18,7 @@ _Allows a fictional hair salon to organize employees and their clients.  Stylist
 
 * _Navigate to the GitHub_
 * _Clone the Repo_
+* _Import the SQL Database by opening MySQL Workbench -> Administration -> Data Import/Restore -> Import from Self-contained File -> Navigate to the .sql file cloned from the repo -> Start Import
 * _Open the project using VS Code_
 * _Open a new terminal_
 * _In the terminal, navigate to 'HairSalon.Solution/HairSalon'_ 
