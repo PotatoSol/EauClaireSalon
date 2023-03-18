@@ -20,11 +20,23 @@ _Allows a fictional hair salon to organize employees and their clients.  Stylist
 * _Clone the Repo_
 * _Open the project using VS Code_
 * _Open a new terminal_
-* _In the terminal, navigate to 'EauClaireSalon.Solution/EauClaireSalon'_ 
+* _In the terminal, navigate to 'HairSalon.Solution/HairSalon'_ 
+* _Create a appsettings.json file_
+* _Include the following lines in it:_
+
+{
+
+    { 
+        "ConnectionStrings": 
+        {
+            "DefaultConnection":"Server=localhost;Port=3306;database=michael_sol;uid=[YOUR-USER-HERE];pwd=[YOUR-PW-HERE];"
+        }
+    }
+}
+
 * _Run 'dotnet restore'_
 * _Run 'dotnet build'_
 * _Run 'dotnet start'_
-* _If you want to run tests, run 'dotnet test' after moving to the VendorOrderTracker.Tests folder_
 
 
 ## Known Bugs
